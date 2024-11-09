@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "5454:5454"
+    container_name: trading-backend-suraz
+    restart: unless-stopped
+
+
