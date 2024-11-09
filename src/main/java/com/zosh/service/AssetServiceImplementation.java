@@ -5,20 +5,15 @@ import com.zosh.model.Asset;
 import com.zosh.model.Coin;
 import com.zosh.model.User;
 import com.zosh.repository.AssetsRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class AssetServiceImplementation implements  AssetService {
     private final AssetsRepository assetRepository;
-
-    @Autowired
-    public AssetServiceImplementation(AssetsRepository assetRepository) {
-        this.assetRepository = assetRepository;
-    }
 
     @Override
     public Asset createAsset(User user, Coin coin, double quantity) {
