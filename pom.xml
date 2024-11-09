@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zosh</groupId>
-    <artifactId>treading-platform</artifactId>
+    <artifactId>trading-platform</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>treading-platform</name>
-    <description>Treading platform Similar To Binance</description>
+    <description>Trading platform Similar To Binance</description>
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>19</maven.compiler.source>

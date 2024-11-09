@@ -1,4 +1,4 @@
-
+#!/bin/bash
 # Function to install Docker using Snap
 install_docker() {
     echo "Docker is not installed. Installing Docker using Snap..."

@@ -19,11 +19,11 @@ FROM builder AS final
 WORKDIR /app
 
 # Copy the built JAR from the previous stage
-COPY --from=builder /build/target/*.jar .
+COPY --from=builder /build/target/trading-platform.jar .
 
 # Expose port and define environment variable
 EXPOSE 5454
 ENV SERVER_PORT=5454
 
 # Command to run the application
-CMD ["java", "-jar", "*.jar"]
+CMD ["java", "-jar", "trading-platform.jar"]
