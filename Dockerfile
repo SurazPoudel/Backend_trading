@@ -24,6 +24,6 @@ COPY --from=builder /build/target/trading-platform.jar .
 # Expose port and define environment variable
 EXPOSE 5454
 ENV SERVER_PORT=5454
-
+ENV SPRING_PROFILES_ACTIVE=prod
 # Command to run the application
 CMD ["java", "-jar", "trading-platform.jar"]
